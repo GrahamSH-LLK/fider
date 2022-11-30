@@ -7,7 +7,7 @@ var providerParams = map[string]map[string]string{
 		"claims": `{"userinfo":{"preferred_username":null,"email":null,"email_verified":null}}`,
 	},
 	"oauth2.scratch-wiki.info": {
-		"title": `Special:ScratchOAuth2\/authorize`,
+		"title": `Special:ScratchOAuth2/authorize`,
 	},
 
 }
