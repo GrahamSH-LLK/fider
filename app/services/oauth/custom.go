@@ -6,10 +6,6 @@ var providerParams = map[string]map[string]string{
 	"id.twitch.tv": {
 		"claims": `{"userinfo":{"preferred_username":null,"email":null,"email_verified":null}}`,
 	},
-	"oauth2.scratch-wiki.info": {
-		"title": `Special:ScratchOAuth2/authorize`,
-		"state": `funstring`,
-	},
 
 }
 
