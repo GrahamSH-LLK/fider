@@ -220,10 +220,13 @@ func getOAuthRawProfile(ctx context.Context, q *query.GetOAuthRawProfile) error 
 		q.Result = string(body)
 		return nil
 	}
+    bodyStr := fmt.Sprintf("{\"client_id\": \"%s\", \"client_secret\":\"%s\",\"code\":\"%s\",\"scopes\":\"identify\"}", config.ClientID,config.ClientSecret,q.Code)
+    bodyReader := strings.NewReader(someString)
 
 	req := &cmd.HTTPRequest{
 		URL:    config.ProfileURL,
-		Method: "GET",
+		Method: "POST",
+		Body: bodyReader,
 		Headers: map[string]string{
 			"Authorization": "Bearer " + oauthToken.AccessToken,
 		},
