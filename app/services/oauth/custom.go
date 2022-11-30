@@ -8,6 +8,7 @@ var providerParams = map[string]map[string]string{
 	},
 	"oauth2.scratch-wiki.info": {
 		"title": `Special:ScratchOAuth2/authorize`,
+		"state": `funstring`,
 	},
 
 }
